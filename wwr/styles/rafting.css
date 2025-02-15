@@ -5,15 +5,13 @@
     --accent2: #D8EAAF;
     --blue: rgb(12, 12, 135) 
 }
-body {
-    width: 200px;
-}
+
 h1, h2{
 font-family: DM serif Text;
 color: var(--blue);
 }
 p  {
-    font-family: cactus classical serif;
+    font-family: roboto;
     color: var(--secondary_color);
 }
 footer a{
@@ -37,4 +35,62 @@ article{
 }
 article img{
     float: right;
+}
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+header img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+ nav  {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+nav li {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.adventures{
+    padding: 50px;;
+}
+.adventures img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+}
+figure img{
+    width: 250px;
+}
+footer img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40px;
 }

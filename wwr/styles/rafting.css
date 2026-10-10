@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0077B6;
     --secondary-color: #023E8A;
-    --accent1-color: #90E0EF;
+    --accent1-color: #48CAE4;
     --accent2-color: #03045E;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -13,7 +13,7 @@
 }
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 header, main, footer {
     width: 840px;
@@ -121,4 +121,93 @@ footer {
 .socialmedia img {
     width: 30px;
     height: 30px;
+}
+.contact-info {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-info h1 {
+    position: static;
+    width: auto;
+    padding: 0;
+    opacity: 1;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px;
+    padding: 0;
+    font-weight: bold;
+}
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 20px auto;
+}
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+.map {
+    margin: 0;
+}
+.contact-form {
+    padding: 10px;
+}
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    font-family: var(--body-font);
+}
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+}
+.contact-form button {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.employees {
+    margin: 40px auto;
+}
+
+.employee-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.employee-profiles figure {
+    margin: 0;
+    text-align: center;
+}
+.employee-profiles img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.employee-profiles figcaption {
+    padding: 10px;
+    font-weight: bold;
 }
